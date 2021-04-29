@@ -1,4 +1,4 @@
-package lk.mrr.controller;
+package lk.mrr.pos.controller;
 
 public class CartFormController {
 }
