@@ -6,6 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
@@ -15,20 +17,33 @@ public class HomeFormController {
     public ImageView btnItem;
     public ImageView btnCart;
     public ImageView btnOrderList;
+    public AnchorPane contextOfHomeForm;
 
     public void btnCustomerOnClick(MouseEvent mouseEvent) throws IOException {
-        URL resource = getClass().getResource("lk/mrr/pos/view/CustomerForm.fxml");
+        setUI("CustomerForm");
+    }
+
+    public void btnItemOnClick(MouseEvent mouseEvent) throws IOException {
+        setUI("ItemForm");
+    }
+
+    public void btnCartOnClick(MouseEvent mouseEvent) throws IOException {
+        setUI("CartForm");
+
+    }
+
+    public void btnOrderListOnClick(MouseEvent mouseEvent) throws IOException {
+        setUI("OrderListForm");
+
+    }
+
+    public void setUI(String form) throws IOException {
+        Stage stage = (Stage) contextOfHomeForm.getScene().getWindow();
+        URL resource = getClass().getResource("../view/" + form + ".fxml");
         Parent load = FXMLLoader.load(resource);
         Scene scene = new Scene(load);
+        stage.setTitle(form.toUpperCase() + " Form");
+        stage.setScene(scene);
 
-    }
-
-    public void btnItemOnClick(MouseEvent mouseEvent) {
-    }
-
-    public void btnCartOnClick(MouseEvent mouseEvent) {
-    }
-
-    public void btnOrderListOnClick(MouseEvent mouseEvent) {
     }
 }
