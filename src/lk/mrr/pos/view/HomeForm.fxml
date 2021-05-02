@@ -8,49 +8,48 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="280.0" maxWidth="700.0" minHeight="280.0" minWidth="700.0" prefHeight="280.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.mrr.pos.controller.HomeFormController">
-   <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="228.0" layoutY="6.0" prefHeight="30.0" text="POS SYSTEM" textFill="#11bcab" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
-         <font>
-            <Font name="Futura Bold" size="36.0" />
-         </font>
-      </Label>
-      <Separator layoutX="240.0" layoutY="45.0" prefWidth="670.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0" />
-      <Separator layoutX="228.0" layoutY="203.0" prefWidth="670.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="10.0" />
-      <Label layoutX="46.0" layoutY="219.0" prefHeight="20.0" text="Developed by : MRR" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" />
-      <Label layoutX="603.0" layoutY="228.0" prefHeight="20.0" text="V 1.0.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="20.0" />
-      <ImageView accessibleRole="BUTTON" accessibleText="Customer" fitHeight="150.0" fitWidth="150.0" layoutX="36.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="530.0" AnchorPane.topAnchor="70.0">
-         <image>
-            <Image url="@../assets/medal.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </ImageView>
-      <ImageView accessibleRole="BUTTON" accessibleText="Items" fitHeight="150.0" fitWidth="150.0" layoutX="206.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="530.0" AnchorPane.topAnchor="70.0">
-         <image>
-            <Image url="@../assets/parcel.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </ImageView>
-      <ImageView accessibleRole="BUTTON" accessibleText="Cat" fitHeight="150.0" fitWidth="150.0" layoutX="356.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="360.0" AnchorPane.rightAnchor="530.0" AnchorPane.topAnchor="70.0">
-         <image>
-            <Image url="@../assets/shopping-cart.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </ImageView>
-      <ImageView accessibleRole="BUTTON" accessibleText="Order List" fitHeight="150.0" fitWidth="150.0" layoutX="506.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="530.0" AnchorPane.rightAnchor="530.0" AnchorPane.topAnchor="70.0">
-         <image>
-            <Image url="@../assets/dollar-symbol.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </ImageView>
-   </children>
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="228.0" layoutY="6.0" prefHeight="30.0" text="POS SYSTEM" textFill="#11bcab" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+            <font>
+                <Font name="Futura Bold" size="36.0" />
+            </font>
+        </Label>
+        <Separator layoutX="240.0" layoutY="45.0" prefWidth="670.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0" />
+        <Separator layoutX="228.0" layoutY="203.0" prefWidth="670.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="10.0" />
+        <Label layoutX="46.0" layoutY="219.0" prefHeight="20.0" text="Developed by : MRR" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" />
+        <Label layoutX="603.0" layoutY="228.0" prefHeight="20.0" text="V 1.0.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="20.0" />
+        <ImageView fx:id="btnCustomer" accessibleRole="BUTTON" accessibleText="Customer" fitHeight="150.0" fitWidth="150.0" layoutX="36.0" layoutY="80.0" onMouseClicked="#btnCustomerOnClick" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="530.0" AnchorPane.topAnchor="70.0">
+            <image>
+                <Image url="@../assets/medal.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+        <ImageView fx:id="btnItem" accessibleRole="BUTTON" accessibleText="Items" fitHeight="150.0" fitWidth="150.0" layoutX="206.0" layoutY="60.0" onMouseClicked="#btnItemOnClick" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="530.0" AnchorPane.topAnchor="70.0">
+            <image>
+                <Image url="@../assets/parcel.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+        <ImageView fx:id="btnCart" accessibleRole="BUTTON" accessibleText="Cat" fitHeight="150.0" fitWidth="150.0" layoutX="356.0" layoutY="69.0" onMouseClicked="#btnCartOnClick" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="360.0" AnchorPane.rightAnchor="530.0" AnchorPane.topAnchor="70.0">
+            <image>
+                <Image url="@../assets/shopping-cart.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+        <ImageView fx:id="btnOrderList" accessibleRole="BUTTON" accessibleText="Order List" fitHeight="150.0" fitWidth="150.0" layoutX="506.0" layoutY="60.0" onMouseClicked="#btnOrderListOnClick" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="530.0" AnchorPane.rightAnchor="530.0" AnchorPane.topAnchor="70.0">
+            <image>
+                <Image url="@../assets/dollar-symbol.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+    </children>
 </AnchorPane>

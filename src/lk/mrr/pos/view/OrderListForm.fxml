@@ -9,35 +9,46 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="720.0" maxWidth="880.0" minHeight="720.0" minWidth="880.0" prefHeight="720.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.mrr.pos.controller.OrderListFormController">
-   <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="238.0" layoutY="16.0" prefHeight="80.0" text="ORDER LIST FORM" textFill="#11bcab" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
-         <font>
-            <Font name="Futura Bold" size="36.0" />
-         </font>
-      </Label>
-      <Separator layoutX="250.0" layoutY="55.0" prefWidth="670.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0" />
-      <Separator layoutX="238.0" layoutY="213.0" prefWidth="670.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
-      <Label layoutX="56.0" layoutY="229.0" prefHeight="20.0" text="Developed by : MRR" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" />
-      <Label layoutX="613.0" layoutY="238.0" prefHeight="20.0" text="V 1.0.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="20.0" />
-      <Button layoutX="48.0" layoutY="22.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" text="Back to Home" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
-      <TableView accessibleText="Customer List " layoutX="54.0" layoutY="360.0" prefHeight="300.0" prefWidth="770.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="100.0">
-         <columns>
-            <TableColumn prefWidth="90.0" text="Order ID" />
-            <TableColumn prefWidth="172.0" text="Order Date" />
-            <TableColumn minWidth="0.0" prefWidth="223.0" text="Customer ID" />
-            <TableColumn minWidth="0.0" prefWidth="354.0" text="Total Value (Rs.)" />
-         </columns>
-         <columnResizePolicy>
-            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
-         </columnResizePolicy>
-         <effect>
-            <DropShadow color="#0000001f" height="10.0" offsetY="3.0" radius="5.7675" width="15.07" />
-         </effect>
-      </TableView>
-   </children>
+<AnchorPane maxHeight="720.0" maxWidth="880.0" minHeight="720.0" minWidth="880.0" prefHeight="720.0" prefWidth="880.0"
+            xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="lk.mrr.pos.controller.OrderListFormController">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="238.0" layoutY="16.0" prefHeight="80.0"
+               text="ORDER LIST FORM" textFill="#11bcab" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+               AnchorPane.topAnchor="10.0">
+            <font>
+                <Font name="Futura Bold" size="36.0"/>
+            </font>
+        </Label>
+        <Separator layoutX="250.0" layoutY="55.0" prefWidth="670.0" AnchorPane.leftAnchor="20.0"
+                   AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0"/>
+        <Separator layoutX="238.0" layoutY="213.0" prefWidth="670.0" AnchorPane.bottomAnchor="40.0"
+                   AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0"/>
+        <Label layoutX="56.0" layoutY="229.0" prefHeight="20.0" text="Developed by : MRR" AnchorPane.bottomAnchor="10.0"
+               AnchorPane.leftAnchor="20.0"/>
+        <Label layoutX="613.0" layoutY="238.0" prefHeight="20.0" text="V 1.0.0" AnchorPane.bottomAnchor="10.0"
+               AnchorPane.rightAnchor="20.0"/>
+        <Button layoutX="48.0" layoutY="22.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0"
+                text="Back to Home" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+        <TableView accessibleText="Customer List " layoutX="54.0" layoutY="360.0" prefHeight="300.0" prefWidth="770.0"
+                   AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0"
+                   AnchorPane.topAnchor="100.0">
+            <columns>
+                <TableColumn prefWidth="90.0" text="Order ID"/>
+                <TableColumn prefWidth="172.0" text="Order Date"/>
+                <TableColumn minWidth="0.0" prefWidth="223.0" text="Customer ID"/>
+                <TableColumn minWidth="0.0" prefWidth="354.0" text="Total Value (Rs.)"/>
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+            <effect>
+                <DropShadow color="#0000001f" height="10.0" offsetY="3.0" radius="5.7675" width="15.07"/>
+            </effect>
+        </TableView>
+    </children>
 </AnchorPane>
